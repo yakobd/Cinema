@@ -1,0 +1,27 @@
+.week_days {
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 10px; */
+  color: aliceblue;
+  background-color: #604500;
+  width: 30%;
+  margin-left: 35%;
+
+  border: #fbf5e6 solid 1px;
+  border-radius: 20px;
+  filter: none;
+}
+
+.week_days ul {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  color: aliceblue;
+  list-style: none;
+  padding: 15px;
+  filter: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
