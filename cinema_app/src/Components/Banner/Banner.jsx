@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "../../Utilis/axios.jsx";
-import requests from "../../utilis/requests.jsx";
+import requests from "../../Utilis/requests.jsx";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import "./Banner.css";
 import "../Calander/Calender.css";
@@ -31,7 +31,6 @@ function Banner() {
       className="banner_Background"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
         backgroundPosition: "center",
         backgroundRepeat: "none",
       }}
@@ -39,7 +38,7 @@ function Banner() {
       <div className="calender">
         <Calender className="calender_side" />
       </div>
-      <div>
+      <div className="MovieList">
         <MovieList />
       </div>
     </div>

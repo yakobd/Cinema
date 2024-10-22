@@ -1,1 +1,7 @@
+.MoviePage {
+  display: flex;
+}
 
+.coming_soon {
+  padding-left: 100px;
+}

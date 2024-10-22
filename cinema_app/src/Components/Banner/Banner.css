@@ -1,13 +1,44 @@
-.banner_Background {
+/* /.banner_Background {
   /* margin-top: -10vh; */
-  height: 90vh;
-  /* margin-bottom: -80px; */
-  /* color: white; */
-  object-fit: contain;
-  /* background-size: auto;  */
-  /* filter: blur(15px); */
+/* height: 90vh; */
+/* margin-bottom: -80px; */
+/* color: white; */
+/* object-fit: cover;
+  background-size: auto;
+  filter: blur(15px); */
+/* }   */
+
+.banner_Background {
+  display: flex; /* Make parent container flexbox */
+  flex-direction: column; /* Stack components vertically */
+}
+.banner_Background {
+  background-image: url("../../assets/images/background_image_2.jpeg");
+  position: relative;
 }
 
 .calender_side {
   filter: none;
 }
+/* 
+.calender {
+  margin-top: 10px;
+} */
+/* .MovieList {
+  width: 60%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+} */
+
+.MovieList::-webkit-scrollbar {
+  display: none;
+}
+/* 
+.MovieList {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  justify-content: center;
+  width: 75%;
+  height: 300vh;
+  overflow-y: auto;
+} */

@@ -1,12 +1,12 @@
 .movie {
-  margin-top: 80px;
-  margin-right: 200px; /* Adjust margins as needed */
+  margin-top: 70px;
+  /* margin-right: 200px;  */
 }
 
 .single_movie {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 60%; /* This ensures the grid takes 60% of its parent container */
+  /* width: 60%;  */
   margin: 0 auto; /* Centers the grid horizontally within the .movie div */
   /* overflow-y: hidden; /* Add this if you want to hide overflow content vertically */
 }
@@ -17,24 +17,38 @@
 
 .image {
   object-fit: contain;
-  max-height: 150px;
+  max-height: 170px;
   border-radius: 20px;
   transition: transform 450ms;
-  margin: 15px;
+  margin: 0 10px 15px 15px;
 }
 
 .image_div {
+  position: relative;
   display: flex;
-  overflow-y: hidden; /* Add this if you want to hide overflow content vertically */
-  overflow-x: hidden; /* Add this if you want to hide overflow content horizontally */
-  padding-left: 100px; /* Adjust padding if needed */
+  padding-left: 90px; /* Adjust padding if needed */
   width: fit-content; /* Remove fixed width to allow content to adjust */
+}
+.play_button {
+  position: absolute;
+  top: 82%;
+  left: 41%;
+  transform: translate(-50%, -50%); /* Center the icon on the image */
+  color: white;
+  /* Adjust color to match image contrast */
+  font-size: 10rem; /* Adjust size as needed */
+  opacity: 1; /* Adjust opacity for hover effect (optional) */
+  cursor: pointer;
+}
+
+.image:hover .play_button {
+  opacity: 2; /* Increase opacity on hover (optional) */
 }
 
 .info_section {
   font-weight: bold;
   color: white;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .info_section ul {
@@ -70,7 +84,7 @@
   font-weight: bold;
   padding: 2px 20px;
   border-radius: 5px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .the_color {
@@ -83,87 +97,6 @@
   color: #fbf5e6;
 }
 
-/* .movie {
-  margin-top: 80px;
-  margin-right: 200px;
-}
-
-.single_movie {
-  /* overflow-y: hidden;
-  overflow-x: scroll; */
-/* max-width: 50%; */
-/* display: grid; */
-/* grid-template-columns: repeat(2, 1fr);
-  width: 60%;
-}
-.single_movie::-webkit-scrollbar {
-  display: none;
-} */
-
-/* .image {
-  object-fit: contain;
-  max-height: 150px;
-  border-radius: 20px;
-  transition: transform 450ms;
-  margin: 15px;
-} */
-/* 
-.image_div {
-  display: flex;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  padding-left: 100px;
-  width: 500px;
-} */
-
-/* .info_section {
-  font-weight: bold;
-  color: white;
-  margin-top: 15px;
-} */
-/* 
-.info_section ul {
-  font-size: 10px;
-  list-style: none;
-  display: flex;
-}
-
-.side_by_side {
-  font-size: 13px;
-  align-items: center;
-  padding-right: 10px;
-  margin-bottom: 5px;
-  display: flex;
-} */
-
-/* .time_Buttons {
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-right: 7px;
-  padding: 3px;
-  border-radius: 5px;
-}
-
-.location {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: flex;
-  font-size: 12px;
-}
-
-.book_button {
-  font-weight: bold;
-  padding: 2px 20px;
-  border-radius: 5px;
-  margin-left: 20px;
-} */
-
-/* .the_color {
-  /* background-color: #604500; */
-/* color: #604500;
-} */
-
-/* .the_colors {
-  background-color: #604500;
+.white_color {
   color: #fbf5e6;
-} */
+}

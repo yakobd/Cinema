@@ -1,15 +1,16 @@
 .week_days {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  /* margin-top: 10px; */
+  margin-top: 20px;
+  display: flex;
   color: aliceblue;
   background-color: #604500;
-  width: 30%;
+  width: 33%;
   margin-left: 35%;
-
   border: #fbf5e6 solid 1px;
   border-radius: 20px;
   filter: none;
+  padding: 10px;
 }
 
 .week_days ul {
@@ -18,10 +19,51 @@
   display: flex;
   color: aliceblue;
   list-style: none;
-  padding: 15px;
+  padding: 5px 5px;
   filter: none;
 }
 
 .pointer {
   cursor: pointer;
+}
+
+.calender {
+  display: flex;
+}
+
+.white {
+  color: aliceblue;
+  padding: 10px;
+}
+.Pagination {
+  justify-content: space-between;
+}
+.week_days .Pagination {
+  /* Customize pagination appearance */
+  font-size: 14px; /* Adjust font size */
+  margin: 0; /* Remove default margins */
+  padding: 5px 10px; /* Adjust padding */
+  /* Add border */
+  border-radius: 5px; /* Add rounded corners */
+  /* Adjust background color */
+}
+
+.week_days .Pagination .active {
+  background-color: #007bff; /* Change active item color */
+  color: white; /* Change active item text color */
+  border: none; /* Remove border for active item */
+}
+
+.week_days .Pagination .page-item {
+  /* Remove default pagination styles */
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.week_days .Pagination .page-link {
+  /* Remove default pagination styles */
+  margin: 0;
+  padding: 0;
+  border: none;
 }

@@ -9,7 +9,6 @@ function Home() {
     <div>
       <Header />
       <Banner />
-      <MovieList />
       <Footer />
     </div>
   );

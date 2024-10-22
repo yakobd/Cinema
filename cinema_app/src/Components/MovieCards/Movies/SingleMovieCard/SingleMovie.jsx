@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "../../../../Utilis/axios.jsx";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
-import WatchLaterIcon from "@mui/icons-material/WatchLater";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
@@ -62,6 +63,7 @@ const SingleMovie = ({ fetchUrl }) => {
               alt={movie.name}
               className="image"
             />
+            <PlayCircleFilledWhiteIcon className="play_button" />
             <div className="info_section">
               <h1 key={index}>hi</h1>
               <div>
@@ -72,7 +74,7 @@ const SingleMovie = ({ fetchUrl }) => {
                   </li>
                   <li className="side_by_side">movie type</li>
                   <li className="side_by_side">
-                    <WatchLaterIcon className="the_color" />
+                    <AccessTimeIcon className=".the_color" />
                     2hr2min
                   </li>
                 </ul>
