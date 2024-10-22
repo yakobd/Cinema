@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import axios from "../../utilis/axios.jsx";
+import axios from "../../Utilis/axios.jsx";
 import requests from "../../utilis/requests.jsx";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import "./Banner.css";
 import "../Calander/Calender.css";
 import Calender from "../Calander/Calender.jsx";
+import MovieList from "../MovieCards/Movies/MovieList/MovieList.jsx";
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -37,6 +38,9 @@ function Banner() {
     >
       <div className="calender">
         <Calender className="calender_side" />
+      </div>
+      <div>
+        <MovieList />
       </div>
     </div>
   );
